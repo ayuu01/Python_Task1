@@ -1,0 +1,133 @@
+class Employee(EmployeeController):
+
+    employeeList = []
+
+    def __init__(self,empId,empName,empSalary):
+        self.empId=empId
+        self.empName= empName
+        self.empSalary= empSalary
+        #Employee.count+= 1
+
+    def setEmpId(self,empId):
+        self.empId = empId
+
+    def getEmpId(self):
+          return  self.empId 
+    
+    def setEmpName(self,empName):
+        self.empName = empName
+
+    def getEmpName(self):
+          return  self.empName
+
+    def setEmpSalary(self,empSalary):
+        self.empSalary = empSalary
+
+    def getEmpSalary(self):
+          return  self.empSalary 
+
+
+    def addEmployee(self):
+         Employee.employeeList.append(self)
+
+
+
+    def dispalyDetails(self):
+        #print(self.empId,self.empName,self.empSalary )
+        for emp in Employee.employeeList:
+            print(emp)
+
+
+    def storeEmpIdAsKey(self):
+            for emp in Employee.employeeList:
+                employees = {emp.getEmpId(): [emp.getEmpId(), emp.getEmpName(), emp.getEmpSalary()]}
+                print(employees)
+
+
+    noDuplicate = []
+    def removeEmpById(self):
+
+       for emp in Employee.employeeList:
+          if emp not in Employee.noDuplicate:
+            Employee.noDuplicate.append(emp)
+          else:
+            Employee.employeeList.remove(emp);
+
+       '''noDup=set(Employee.employeeList)
+        print(noDup)'''
+
+
+
+
+
+    def updateSalary(self):
+
+        for emp in Employee.employeeList:
+            if (emp.getEmpId()==1):
+                emp.setEmpSalary(40000)
+
+
+
+    def searchEmployee(self):
+
+        for emp in Employee.employeeList:
+            if (emp.getEmpId()==1):
+                 print(emp)
+
+
+
+    def __str__(self):
+        return "%d %s %d"%(self.empId,self.empName,self.empSalary)
+
+
+    def getEmpList(self):
+        return Employee.employeeList
+
+
+'''searchEmployee= lambda self, empSalary:
+    for emp in Employee.employeeList:
+        if (emp.getEmpId()==101):
+             print(emp)'''
+
+
+
+'''emp=Employee (0, " ", 0)
+e1 = Employee (1, "Anu", 35000)
+e2 = Employee (2, "Palak", 33000)
+e3 = Employee (3, "Ronak", 45000)
+e3 = Employee (3, "Ronak", 45000)
+
+
+e1.addEmployee()
+e2.addEmployee()
+e3.addEmployee()
+e3.addEmployee()
+
+
+print("Details of employee:")
+emp.dispalyDetails()
+
+
+print("--------------------------------------------")
+print("Details of employee:")
+emp.storeEmpIdAsKey()
+
+
+print("--------------------------------------------")
+print("Details of employee after removing duplicate id:")
+emp.removeEmpById()
+emp.dispalyDetails()
+
+
+print("--------------------------------------------")
+print("Details of employee after updating salary:")
+emp.updateSalary()
+emp.dispalyDetails()
+
+print("--------------------------------------------")
+emp.searchEmployee()'''
+
+
+
+
+

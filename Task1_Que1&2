@@ -1,0 +1,28 @@
+list=[1,2,3,4,5,6,7,8,9,10,11,12]
+print (list)
+
+def divide_chunks(list,n):
+     for i in range(0,len(list),n):
+         #print( list[i: i+n] )
+         revlist=[]
+         newlist=list[i:i+n]
+         y=reversed(newlist)
+         for j in y:
+             revlist.append(j);
+         print(revlist)
+
+
+n=len(list)//3
+divide_chunks(list,n)
+
+
+
+
+input_lists1 = ['te','inp']
+input_lists2 = ['st','ut']
+
+res= [i+j for i,j in zip(input_lists1,input_lists2)]
+
+print(res)
+
+

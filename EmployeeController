@@ -1,0 +1,38 @@
+import Employee
+
+emp= Employee (0, " ", 0)
+e1 = Employee (1, "Anu", 35000)
+e2 = Employee (2, "Palak", 33000)
+e3 = Employee (3, "Ronak", 45000)
+e3 = Employee (3, "Ronak", 45000)
+
+
+e1.addEmployee()
+e2.addEmployee()
+e3.addEmployee()
+e3.addEmployee()
+
+
+print("Details of employee:")
+emp.dispalyDetails()
+
+
+print("--------------------------------------------")
+print("Details of employee:")
+emp.storeEmpIdAsKey()
+
+
+print("--------------------------------------------")
+print("Details of employee after removing duplicate id:")
+emp.removeEmpById()
+emp.dispalyDetails()
+
+
+print("--------------------------------------------")
+print("Details of employee after updating salary:")
+emp.updateSalary()
+emp.dispalyDetails()
+
+print("--------------------------------------------")
+emp.searchEmployee()
+
