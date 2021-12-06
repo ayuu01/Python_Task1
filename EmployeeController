@@ -34,6 +34,11 @@ emp.updateSalary()
 emp.dispalyDetails()
 
 print("--------------------------------------------")
+print("Details of employee after splitting name:")
+emp.splittingEmployeeName()
+
+
+print("--------------------------------------------")
 print("Details of employee after seaching :")
 emp.searchEmployee()
 
