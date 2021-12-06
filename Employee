@@ -73,6 +73,16 @@ class Employee1:
 
 
     #def searchEmployee_lambda(self,empId):search_data= list(filter(lambda emp: emp[0]==empId,employeeList))return search_data
+    
+    def splittingEmployeeName(self):
+    new_emplist={}
+    for emp in Employee.employeeList:
+        new_emplist["EmpId"] = emp.getEmpId()
+        Fname,Lname = emp.getEmpName.split(" ")
+        new_emplist["Fname"] = Fname
+        new_emplist["Lname"] = Lname
+        new_emplist["Salary"] = emp.getEmpId()
+        print(new_emplist)
 
 
     def __str__(self):
