@@ -1,4 +1,4 @@
-import Employee
+from Employee import *
 
 emp= Employee (0, " ", 0)
 e1 = Employee (1, "Anu", 35000)
@@ -18,7 +18,7 @@ emp.dispalyDetails()
 
 
 print("--------------------------------------------")
-print("Details of employee:")
+print("Details of employee store id as key:")
 emp.storeEmpIdAsKey()
 
 
@@ -34,5 +34,6 @@ emp.updateSalary()
 emp.dispalyDetails()
 
 print("--------------------------------------------")
+print("Details of employee after seaching :")
 emp.searchEmployee()
 
