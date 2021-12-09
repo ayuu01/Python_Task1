@@ -35,6 +35,13 @@ class Employee:
         #print(self.empId,self.empName,self.empSalary )
         for emp in Employee.employeeList:
             print(emp)
+            
+            
+    def dispalyDetailsSalaryWise(self):
+
+        employee_info= sorted(Employee.employeeList, key=lambda employee: employee.getEmpSalary(),reverse=True)
+        for emp in employee_info:
+                    print(emp)
 
 
     def storeEmpIdAsKey(self):
@@ -78,7 +85,7 @@ class Employee:
     new_emplist={}
     for emp in Employee.employeeList:
         new_emplist["EmpId"] = emp.getEmpId()
-        Fname,Lname = emp.getEmpName.split(" ")
+        Fname,Lname = emp.getEmpName().split(" ")
         new_emplist["Fname"] = Fname
         new_emplist["Lname"] = Lname
         new_emplist["Salary"] = emp.getEmpId()
