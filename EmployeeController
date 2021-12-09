@@ -1,10 +1,10 @@
 from Employee import *
 
 emp= Employee (0, " ", 0)
-e1 = Employee (1, "Anu", 35000)
-e2 = Employee (2, "Palak", 33000)
-e3 = Employee (3, "Ronak", 45000)
-e3 = Employee (3, "Ronak", 45000)
+e1 = Employee (1, "Anu Sharma", 35000)
+e2 = Employee (2, "Palak Garg", 33000)
+e3 = Employee (3, "Ronak Gupta", 45000)
+e3 = Employee (3, "Ronak Gupta", 45000)
 
 
 e1.addEmployee()
