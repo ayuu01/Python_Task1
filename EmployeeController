@@ -17,6 +17,11 @@ print("Details of employee:")
 emp.dispalyDetails()
 
 
+print("---------------------------------------------------")
+print("Details of employee SalaryWise")
+emp.dispalyDetailsSalaryWise()
+
+
 print("--------------------------------------------")
 print("Details of employee store id as key:")
 emp.storeEmpIdAsKey()
